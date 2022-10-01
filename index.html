@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Assinament 9</title>
+</head>
+<body>
+    <div class="container pb-4  shadow-lg">
+        <h1 class="my-5 py-4  text-muted border border-1  border-bottom border-0 border-secondary">Bookmarker <i class="fa-solid fa-bookmark text-danger"></i></h1>
+        <div class="content p-3 alert alert-secondary  text-center">
+            <h3 class="text-light my-3 fw-bolder text-center">Bookmark your favorite sites</h3>
+            <h4 class="fs-5">Site Name</h4>
+            <input type="text" class="form-control my-3 w-75 mx-auto" placeholder="Bookmark Name" id="nameInput">
+            <h4 class="fs-5">Site URL</h4>
+            <input type="text" class="form-control my-3 w-75 mx-auto" placeholder="Websit URL" id="urlInput">
+            <button class="btn btn-primary my-3" onclick="creatBook()" id="submit">submit</button>
+        </div>
+        <input type="text" placeholder="seach..." class="form-control w-75 mx-auto my-4 border-dark" id="searchInput" onkeyup="searchBook()">
+    </div>
+    <div class="table-responsive my-5 container">
+
+        <table class="table table-striped">
+            <thead>
+                <th scope="col">Index</th>
+                <th scope="col">Name </th>
+                
+                <th scope="col">visit </th>
+                <th scope="col">update</th>
+                <th scope="col">delete</th>
+            </thead>
+            <tbody id="tbody">
+                
+                
+            </tbody>
+        </table>
+
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
